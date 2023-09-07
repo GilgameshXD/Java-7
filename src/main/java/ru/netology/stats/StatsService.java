@@ -3,21 +3,21 @@ package ru.netology.stats;
 public class StatsService {
 
     public int sumSales(long[] sales) {
-        long x = 0;
+        long sumSales = 0;
         for (int i = 0; i < sales.length; i++) {
-            x = x + sales[i];
-            }
+            sumSales = sumSales + sales[i];
+        }
 
-        return (int)x;
+        return (int) sumSales;
     }
 
     public int avgSales(long[] sales) {
-        long x = 0;
+        long sumSales = 0;
         for (int i = 0; i < sales.length; i++) {
-            x = x + sales[i];
+            sumSales = sumSales + sales[i];
         }
 
-        return ((int)x/sales.length);
+        return ((int) sumSales / sales.length);
     }
 
     public int maxSales(long[] sales) {
@@ -45,14 +45,14 @@ public class StatsService {
     }
 
     public int lessAvgSales(long[] sales) {
-        long x = 0;
+        long sumSales = 0;
         for (int i = 0; i < sales.length; i++) {
-            x = x + sales[i];
+            sumSales = sumSales + sales[i];
         }
-        x = x/sales.length;
+        sumSales = sumSales / sales.length;
         int lessAvgMonts = 0;
         for (int i = 0; i < sales.length; i++)
-            if (sales[i] < x) {
+            if (sales[i] < sumSales) {
                 lessAvgMonts++;
             }
 
@@ -60,14 +60,14 @@ public class StatsService {
     }
 
     public int moreAvgSales(long[] sales) {
-        long x = 0;
+        long sumSales = 0;
         for (int i = 0; i < sales.length; i++) {
-            x = x + sales[i];
+            sumSales = sumSales + sales[i];
         }
-        x = x/sales.length;
+        sumSales = sumSales / sales.length;
         int moreAvgMonts = 0;
         for (int i = 0; i < sales.length; i++)
-            if (sales[i] > x) {
+            if (sales[i] > sumSales) {
                 moreAvgMonts++;
             }
 

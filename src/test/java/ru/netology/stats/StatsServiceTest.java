@@ -11,10 +11,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 180;
-        long actual = service.sumSales(sales);
+        long expectedSum = 180;
+        long actualSum = service.sumSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedSum, actualSum);
     }
 
     @Test
@@ -23,10 +23,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 15;
-        long actual = service.avgSales(sales);
+        long expectedAvg = 15;
+        long actualAvg = service.avgSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedAvg, actualAvg);
     }
 
     @Test
@@ -35,10 +35,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 6;
-        long actual = service.maxSales(sales);
+        long expectedMaxSalesMonths = 6;
+        long actualMaxSalesMonths = service.maxSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedMaxSalesMonths, actualMaxSalesMonths);
     }
 
     @Test
@@ -47,10 +47,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 9;
-        long actual = service.minSales(sales);
+        long expectedMinSalesMonths = 9;
+        long actualMinSalesMonths = service.minSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedMinSalesMonths, actualMinSalesMonths);
     }
 
     @Test
@@ -59,10 +59,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 5;
-        long actual = service.lessAvgSales(sales);
+        long expectedLessAvgSales = 5;
+        long actualLessAvgSales = service.lessAvgSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedLessAvgSales, actualLessAvgSales);
     }
 
     @Test
@@ -71,10 +71,10 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 5;
-        long actual = service.moreAvgSales(sales);
+        long expectedMoreAvgSales = 5;
+        long actualMoreAvgSales = service.moreAvgSales(sales);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expectedMoreAvgSales, actualMoreAvgSales);
     }
 
 }
